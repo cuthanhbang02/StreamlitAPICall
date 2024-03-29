@@ -76,4 +76,8 @@ if move_button:
 )
     st.text(response.json())
 
+    status = response.json()
+    df = pd.DataFrame(status['data'])
+    st.dataframe(df)
+
             
